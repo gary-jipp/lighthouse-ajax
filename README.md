@@ -58,4 +58,8 @@
 
 ### jQuery Ajax
 - jQuery makes things easier.
-- `$.ajax()` function
+- import the jQuery library with a 'CDN'
+- https://cdnjs.com
+- `$.ajax()` function: the old (harder) way (don't forget `.ready()`)
+- fetch `about.json`. Can see the "GET" network tab
+- use `.success` function to return a successful response

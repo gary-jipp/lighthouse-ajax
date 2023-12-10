@@ -1,23 +1,13 @@
+// Move to top of file: preferable
+// $(() => { // Short form
+$(document).ready(() => {
+  // Doesn't work without document.ready. #action does not exist yet
+  $("#action").on('click', onButtonClick);
+});
 
 const onButtonClick = function() {
   console.log("Clicked");
-
-  const xhttp = new XMLHttpRequest();
-
-  xhttp.onreadystatechange = function() {
-    if (this.readyState === 4 && this.status === 200) {
-      console.log(xhttp.responseText);
-      document.getElementById("action");
-      const about = document.getElementById("about");
-      about.innerHTML = xhttp.responseText;
-    }
-  };
-
-  // xhttp.open("GET", "about.html");
-  xhttp.open("GET", "about.xml"); // Name doesn't matter
-  xhttp.send();
+  $.ajax({
+    url: "about.json"
+  })
 };
-
-
-const button = document.getElementById("action");
-button.addEventListener("click", onButtonClick);
