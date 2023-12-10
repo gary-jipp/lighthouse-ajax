@@ -40,7 +40,7 @@
   - XML (later JSON) for data
   - DOM for dynamic display of data
   - JavaScript brings it all together
-- XML?? in the 2000's XML was the hot thing. There was X-Everything!
+- Why XML?? in the 2000's XML was the hot thing. There was X-Everything!
 - XML - markup language for packaging data
  ```xml
  <person>
