@@ -28,3 +28,5 @@
  - Originally developed for Microsoft Outlook
  - Included in IE in 2000
  - the term ajax was coined in 2006
+ - uses the `XMLHttpRequest` object
+ - not the easiest code to write
