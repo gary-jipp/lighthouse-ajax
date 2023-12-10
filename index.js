@@ -42,7 +42,7 @@ const onButtonClickTheHardWay = function() {
 const onButtonClickPromises = function() {
   console.log("Clicked");
 
-  // The Better. Still a bit hard
+  // The Better way. Still a bit hard
   $.ajax({
     url: "about.json",
     type: "GET",
