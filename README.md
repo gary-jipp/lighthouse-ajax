@@ -55,7 +55,7 @@
  - today we use JSON because it can be read natively by JavaScript
  - XML needs to be parsed (eg: `about.xml`)
 
-### jQuery Ajax - the really old way
+### jQuery Ajax - the old way
 - jQuery makes things easier.
 - import the jQuery library with a 'CDN'
 - https://cdnjs.com
@@ -64,3 +64,14 @@
 - use `.success` function to return a successful response
 - other ajax options: `error`, `method`/`type` (default is "GET")
 - `success` and `error` are deprecated.  Do not use!
+
+### jQuery Ajax - the hard way
+- We can use `.done`, `error` & `always`
+- This is still the hard way and a little old still
+
+### jQuery Ajax - the better way
+- $.ajax() returns a Promise.  can `then` & `catch`
+- Doesn't make it much simpler yet.
+- No need to use the ajax settings object unless "special" settings (rare)
+- We can use the Ajax helper functions for most cases: `$.get`, `$.post`
+- https://api.jquery.com/category/ajax/shorthand-methods/
