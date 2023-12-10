@@ -25,8 +25,28 @@
 - mini-requests
 
 ###  XMLHttpRequest (XHR)
- - Originally developed for Microsoft Outlook
- - Included in IE in 2000
- - the term ajax was coined in 2006
- - uses the `XMLHttpRequest` object
- - not the easiest code to write
+- Originally developed for Microsoft Outlook
+- Included in IE in 2000
+- uses the `XMLHttpRequest` object
+- not the easiest code to write
+
+ ### Ajax
+ - the term "AJAX" was coined in 2006
+ - "Asynchronous JavaScript and XML"
+ - Its not a technology, but rather a programming concept
+ - combines existing technologies in a new way
+  - html + CSS for presentation
+  - XHR for communication
+  - XML (later JSON) for data
+  - DOM for dynamic display of data
+  - JavaScript brings it all together
+- XML?? in the 2000's XML was the hot thing. There was X-Everything!
+- XML - markup language for packaging data
+ ```xml
+ <person>
+  <name>Bob</name>
+  <age>35</age>
+ </person>
+ ```
+- HTML is a loose variant of XML
+- today we use JSON
