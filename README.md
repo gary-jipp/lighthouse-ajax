@@ -54,3 +54,7 @@
  - Library of tags you are allowed to use
  - HTML is a variant of XML (browser will allow broken tags)
  - today we use JSON
+
+### jQuery Ajax
+- jQuery makes things easier.
+- `$.ajax()` function
