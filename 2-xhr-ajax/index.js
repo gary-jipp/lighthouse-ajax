@@ -6,14 +6,15 @@ const onButtonClick = function() {
 
   xhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
+      console.log(xhttp.responseText);
       document.getElementById("action");
       const about = document.getElementById("about");
       about.innerHTML = xhttp.responseText;
     }
   };
 
-  xhttp.open("GET", "about.html");
-  // xhttp.open("GET", "about.xml"); // Name doesn't matter
+  // xhttp.open("GET", "about.html");
+  xhttp.open("GET", "about.xml"); // Name doesn't matter
   xhttp.send();
 };
 

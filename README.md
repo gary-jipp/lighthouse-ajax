@@ -56,7 +56,6 @@
  - today we use JSON because it can be read natively by JavaScript
  - XML needs to be parsed (eg: `about.xml`)
 
-
 ### jQuery Ajax
 - jQuery makes things easier.
 - `$.ajax()` function
