@@ -53,7 +53,9 @@
  - XML has the concept of "XML Schema's" (template)
  - Library of tags you are allowed to use
  - HTML is a variant of XML (browser will allow broken tags)
- - today we use JSON
+ - today we use JSON because it can be read natively by JavaScript
+ - XML needs to be parsed (eg: `about.xml`)
+
 
 ### jQuery Ajax
 - jQuery makes things easier.
