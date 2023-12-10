@@ -3,6 +3,8 @@
 - [ ] HTTP Protocol & HTML
 - [ ] Why Ajax?
 - [ ] Brief History
+- [ ] iFrame & XMLHttpRequest
+
 
 ### HTTP Protocol & HTML
 - request - response
@@ -21,8 +23,3 @@
 - mini page within a page
 - the beginning of a new concept in web pages
 - mini-requests
-
-###  XMLHttpRequest (XHR)
- - Originally developed for Microsoft Outlook
- - Included in IE in 2000
- - the term ajax was coined in 2006
