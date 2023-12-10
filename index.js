@@ -13,6 +13,7 @@ const onButtonClick = function() {
   };
 
   xhttp.open("GET", "about.html");
+  // xhttp.open("GET", "about.txt"); // Name doesn't matter
   xhttp.send();
 };
 
