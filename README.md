@@ -4,7 +4,6 @@
  - [ ] Brief History
  - [ ] iFrame & XMLHttpRequest
 
-
 ### HTTP Protocol & HTML
  - request - response
  - HTML is a static page
@@ -56,10 +55,12 @@
  - today we use JSON because it can be read natively by JavaScript
  - XML needs to be parsed (eg: `about.xml`)
 
-### jQuery Ajax
+### jQuery Ajax - the really old way
 - jQuery makes things easier.
 - import the jQuery library with a 'CDN'
 - https://cdnjs.com
 - `$.ajax()` function: the old (harder) way (don't forget `.ready()`)
 - fetch `about.json`. Can see the "GET" network tab
 - use `.success` function to return a successful response
+- other ajax options: `error`, `method`/`type` (default is "GET")
+- success and error are deprecated.  Do not use!
