@@ -63,4 +63,4 @@
 - fetch `about.json`. Can see the "GET" network tab
 - use `.success` function to return a successful response
 - other ajax options: `error`, `method`/`type` (default is "GET")
-- success and error are deprecated.  Do not use!
+- `success` and `error` are deprecated.  Do not use!
