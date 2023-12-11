@@ -7,9 +7,9 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 
 const dogs = [
-  {name: "Fly", breed: "Border Collie"},
-  {name: "Benji", breed: "Golden Mix"},
-  {name: "Lassie", breed: "German Shepherd"}
+  {id: "aa1", name: "Fly", breed: "Border Collie"},
+  {id: "aa2", name: "Benji", breed: "Golden Mix"},
+  {id: "aa3", name: "Lassie", breed: "German Shepherd"}
 ];
 
 // app.use(express.static("public"));  // also works (/ is default path)
@@ -23,7 +23,8 @@ app.post("/api/dogs/", (req, res) => {
   const name = req.body.name;
   const breed = req.body.breed;
 
-  const dog = {name, breed};
+  const id = Math.random().toString(36).substring(2, 6);
+  const dog = {id, name, breed};
   dogs.push(dog);
   res.status(201).send(""); // Created
 });

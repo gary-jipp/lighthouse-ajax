@@ -42,3 +42,12 @@ input[type="text"] {
   color: bisque;
   width: 5em;
 }
+
+section#dog-form {
+  display: none;
+}
+
+.toggle {
+  background-color: darkgreen;
+  color: darkseagreen;
+}

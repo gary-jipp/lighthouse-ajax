@@ -1,8 +1,27 @@
 
 $(() => { // Short form
   $(".dog-form").on('submit', onSubmit);
+  $(".toggle").on('click', toggleForm);
+
+  $('.dog-article').on('click', onArticleClick);
   loadDogs();
 });
+
+
+const onArticleClick = function() {
+  console.log("clicked");
+};
+
+const toggleForm = function() {
+  const $section = $('#dog-form');
+
+  if ($section.is(':visible')) {
+    return $section.slideUp('fast');
+  }
+
+  $section.slideDown('fast');
+  $section.find('input[name="name"]').focus();
+};
 
 const onSubmit = function(event) {
   event.preventDefault();

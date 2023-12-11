@@ -90,3 +90,9 @@
  - use express `urnEncoded` parser top read body to create new dog
  - read dog on client side and reload
  - maybe `prepend` elements for most recent first
+
+### Extra Functions
+ - Handle onClick on Dynamic Elements
+  - listener much be on the container
+  - can attach the original data object to the jquery element
+ - Hide / Show Form
