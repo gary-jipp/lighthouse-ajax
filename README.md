@@ -1,8 +1,12 @@
 # AJAX
- - [ ] HTTP Protocol & HTML
- - [ ] Why Ajax?
- - [ ] Brief History
- - [ ] iFrame & XMLHttpRequest
+- [ ] HTTP Protocol & HTML
+- [ ] Brief History
+- [ ] iFrame & XMLHttpRequest
+- [ ] XML
+- [ ] jQuery Ajax: different flavors
+- [ ] Http GET & POST
+- [ ] Sample Ajax Single Page App
+- [ ] jQuery Extras
 
 ### HTTP Protocol & HTML
  - request - response
