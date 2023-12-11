@@ -3,13 +3,20 @@ $(() => { // Short form
   $(".dog-form").on('submit', onSubmit);
   $(".toggle").on('click', toggleForm);
 
-  $('.dog-article').on('click', onArticleClick);
+  // Doesn't work
+  // $('.dog-article').on('click', onArticleClick);
+
+  // Must add listener to an existing DOM element
+  $('#dogs-container').on('click', ".dog-article", onArticleClick);
+
   loadDogs();
 });
 
 
 const onArticleClick = function() {
   console.log("clicked");
+  const dog = $(this).data("dog");
+  console.log(dog);
 };
 
 const toggleForm = function() {
