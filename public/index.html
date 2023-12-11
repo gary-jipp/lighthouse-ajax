@@ -18,6 +18,14 @@
 
   <body>
     <h1>Dogs</h1>
+    <form class="dog-form" action="/api/dogs" method="post">
+      <input type="text" class="name" name="name" placeholder="New dog name" />
+      <input type="text" class="breed" name="breed" placeholder="breed" />
+      <input class="submit" type="submit" value="Add" />
+      <!-- Input/submit button are similar.  Input may be more flexible here-->
+      <!-- <button class="submit">Add</button> -->
+    </form>
+
     <section id="dogs-container" />
   </body>
 

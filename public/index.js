@@ -1,6 +1,21 @@
+
 $(() => { // Short form
+  $(".dog-form").on('submit', onSubmit);
   loadDogs();
 });
+
+const onSubmit = function(event) {
+  event.preventDefault();
+
+  const data = $(this).serialize();
+  console.log(data);
+
+  $.post("/api/dogs", data)
+    .then(() => {
+      loadDogs(); // need to clear each time
+    });
+
+};
 
 const loadDogs = function() {
 
@@ -11,19 +26,17 @@ const loadDogs = function() {
     });
 };
 
-
 const renderDogs = function(dogs) {
   // Can't just render an array of Objects.
   // $('#dogs-container').text(dogs);
 
   // Save this once and reuse
-  const $container = $('#dogs-container');
+  const $container = $('#dogs-container').empty();
 
   for (const dog of dogs) {
     const $element = createDogElement(dog);
-    $container.append($element);
+    $container.prepend($element);
   }
-
 };
 
 const createDogElement = function(dog) {

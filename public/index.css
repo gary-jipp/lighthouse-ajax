@@ -7,6 +7,10 @@ body {
   font-family: Arial, Helvetica, sans-serif
 }
 
+#dogs-container {
+  margin-top: 1em;
+}
+
 .dog-article {
   background-color: darkgreen;
   color: bisque;
@@ -19,4 +23,17 @@ body {
   color: darkseagreen;
   margin: .2em;
   width: 18em;
+}
+
+.dog-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  max-width: 14em;
+}
+
+.submit {
+  width: 5em;
 }

@@ -83,3 +83,10 @@
 ### Dogs App - Show Dogs
  - route to send a list of dogs:  `/api/dogs` (json)
  - page loads dogs on startup
+
+### Dogs App - Add Dog
+ - create a form with inputs and a submit
+ - listen for submit event on form & post to `/api/dogs`
+ - use express `urnEncoded` parser top read body to create new dog
+ - read dog on client side and reload
+ - maybe `prepend` elements for most recent first
