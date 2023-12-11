@@ -13,3 +13,10 @@ body {
   margin: .2em;
   width: 18em;
 }
+
+.dog-article:hover {
+  background-color: darkolivegreen;
+  color: darkseagreen;
+  margin: .2em;
+  width: 18em;
+}
