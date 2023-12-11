@@ -66,12 +66,15 @@ const renderDogs = function(dogs) {
 };
 
 const createDogElement = function(dog) {
-  const $element = `
+  const article = `
   <article class="dog-article"
     <div>${dog.name}</div>
     <div>${dog.breed}</div>
   </article>
   `;
+
+  const $element = $(article);
+  $element.data("dog", dog);
 
   return $element;
 };
