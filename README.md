@@ -91,8 +91,7 @@
  - read dog on client side and reload
  - maybe `prepend` elements for most recent first
 
-### Extra Functions
- - Handle onClick on Dynamic Elements
-  - listener much be on the container
-  - can attach the original data object to the jquery element
+### Extras
+ - Handle onClick on Dynamic Elements: listener on the container
+ - Attach a  data object to a jquery element
  - Hide / Show Form
