@@ -79,3 +79,6 @@
 ### Dogs  App - Express Server
  - use Express & Morgan to serve out the 3 static files
  - `express.static()`
+
+### Dogs App - Show Dogs
+ - route to send a list of dogs:  `/api/dogs` (json)
