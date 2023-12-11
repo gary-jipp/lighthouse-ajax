@@ -1,74 +1,38 @@
-// Move to top of file: preferable
-// $(() => { // Short form
-$(document).ready(() => {
-  // Doesn't work without document.ready. #action does not exist yet
-  $("#action").on('click', onButtonClick);
+$(() => { // Short form
+  loadDogs();
 });
 
-const onButtonClickTheOldWay = function() {
-  console.log("Clicked");
+const loadDogs = function() {
 
-  // The really old way (settings object)
-  $.ajax({
-    url: "about.json",
-    type: "GET",
-    success: function(data) {
-      console.log(data);
-      $('#about').text(data.text);
-    },
-    error: function(error) {
-      console.log(error.statusText);
-    },
-  });
-
-};
-
-const onButtonClickTheHardWay = function() {
-  console.log("Clicked");
-
-  // The hard way. Still old
-  $.ajax({
-    url: "about.json",
-    type: "GET",
-  }).done(data => {
-    console.log(data);
-    $('#about').text(data.text);
-  }).fail(error => {
-    console.log(error.statusText);
-  });
-
-};
-
-const onButtonClickPromises = function() {
-  console.log("Clicked");
-
-  // A somewhat more modern way. Still a bit hard
-  $.ajax({
-    url: "about.json",
-    type: "GET",
-  })
+  $.get('/api/dogs')
     .then(data => {
       console.log(data);
-      $('#about').text(data.text);
-    })
-    .catch(error => {
-      console.log(error.statusText);
+      renderDogs(data);
     });
+};
+
+
+const renderDogs = function(dogs) {
+  // Can't just render an array of Objects.
+  // $('#dogs-container').text(dogs);
+
+  // Save this once and reuse
+  const $container = $('#dogs-container');
+
+  for (const dog of dogs) {
+    const $element = createDogElement(dog);
+    $container.append($element);
+  }
 
 };
 
-// The better way
-const onButtonClick = function() {
-  console.log("Clicked");
+const createDogElement = function(dog) {
+  const $element = `
+  <article class="dog-article"
+    <div>${dog.name}</div>
+    <div>${dog.breed}</div>
+  </article>
+  `;
 
-  // The Better. Still a bit hard
-  $.get("about.json")
-    .then(data => {
-      console.log(data);
-      $('#about').text(data.text);
-    })
-    .catch(error => {
-      console.log(error.statusText);
-    });
-
+  return $element;
 };

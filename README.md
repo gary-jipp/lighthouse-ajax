@@ -82,3 +82,4 @@
 
 ### Dogs App - Show Dogs
  - route to send a list of dogs:  `/api/dogs` (json)
+ - page loads dogs on startup

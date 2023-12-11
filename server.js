@@ -8,7 +8,7 @@ app.use(morgan('dev'));
 const dogs = [
   {name: "Fly", breed: "Border Collie"},
   {name: "Benji", breed: "Golden Mix"},
-  {name: "Lassie", breed: "German Shepard"}
+  {name: "Lassie", breed: "German Shepherd"}
 ];
 
 // app.use(express.static("public"));  // also works (/ is default path)
