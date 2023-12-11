@@ -82,7 +82,7 @@
 
 ### Dogs App - Show Dogs
  - route to send a list of dogs:  `/api/dogs` (json)
- - page loads dogs on startup
+ - page loads all its data on startup
 
 ### Dogs App - Add Dog
  - create a form with inputs and a submit
@@ -93,5 +93,5 @@
 
 ### Extras
  - Handle onClick on Dynamic Elements: listener on the container
- - Attach a  data object to a jquery element
- - Hide / Show Form
+ - Attach a data object to a jquery element using `.data()`
+ - Hide / Show Form using `slideUp()` and `slideDown()`
