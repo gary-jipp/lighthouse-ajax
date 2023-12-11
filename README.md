@@ -89,7 +89,7 @@
  - listen for submit event on form & post to `/api/dogs`
  - use express `urnEncoded` parser top read body to create new dog
  - read dog on client side and reload
- - maybe `prepend` elements for most recent first
+ - `prepend` elements for most recent first
 
 ### Extras
  - Handle onClick on Dynamic Elements: listener on the container
