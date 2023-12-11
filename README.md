@@ -56,22 +56,26 @@
  - XML needs to be parsed (eg: `about.xml`)
 
 ### jQuery Ajax - the old way
-- jQuery makes things easier.
-- import the jQuery library with a 'CDN'
-- https://cdnjs.com
-- `$.ajax()` function: the old (harder) way (don't forget `.ready()`)
-- fetch `about.json`. Can see the "GET" network tab
-- use `.success` function to return a successful response
-- other ajax options: `error`, `method`/`type` (default is "GET")
-- `success` and `error` are deprecated.  Do not use!
+ - jQuery makes things easier.
+ - import the jQuery library with a 'CDN'
+ - https://cdnjs.com
+ - `$.ajax()` function: the old (harder) way (don't forget `.ready()`)
+ - fetch `about.json`. Can see the "GET" network tab
+ - use `.success` function to return a successful response
+ - other ajax options: `error`, `method`/`type` (default is "GET")
+ - `success` and `error` are deprecated.  Do not use!
 
 ### jQuery Ajax - the hard way
-- We can use `.done`, `error` & `always`
-- This is still the hard way and a little old still
+ - We can use `.done`, `error` & `always`
+ - This is still the hard way and a little old still
 
 ### jQuery Ajax - the better way
-- $.ajax() returns a Promise.  can `then` & `catch`
-- Doesn't make it much simpler yet.
-- No need to use the ajax settings object unless "special" settings (rare)
-- We can use the Ajax helper functions for most cases: `$.get`, `$.post`
-- https://api.jquery.com/category/ajax/shorthand-methods/
+ - `$.ajax()` returns a Promise.  can `then` & `catch`
+ - Doesn't make it much simpler yet.
+ - No need to use the ajax settings object unless "special" settings (rare)
+ - We can use the Ajax helper functions for most cases: `$.get`, `$.post`
+ - https://api.jquery.com/category/ajax/shorthand-methods/
+
+### Dogs  App - Express Server
+ - use Express & Morgan to serve out the 3 static files
+ - `express.static()`
