@@ -6,9 +6,16 @@ $(() => { // Short form
 
 const onSubmit = function(event) {
   event.preventDefault();
+  const $form = $(this);
+  const $name = $form.find('input.name').val();
+  const $breed = $form.find('input.breed').val();
+  if (!$name || !$breed) {
+    return;
+  }
 
-  const data = $(this).serialize();
+  const data = $form.serialize();
   console.log(data);
+
 
   $.post("/api/dogs", data)
     .then(() => {

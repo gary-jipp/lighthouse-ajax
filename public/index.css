@@ -21,8 +21,6 @@ body {
 .dog-article:hover {
   background-color: darkolivegreen;
   color: darkseagreen;
-  margin: .2em;
-  width: 18em;
 }
 
 .dog-form {
@@ -35,5 +33,12 @@ input[type="text"] {
 }
 
 .submit {
+  width: 5em;
+  background-color: darkgreen;
+  color: darkseagreen;
+}
+
+.submit:hover {
+  color: bisque;
   width: 5em;
 }
