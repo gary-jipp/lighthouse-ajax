@@ -14,8 +14,11 @@ $(() => { // Short form
 
 
 const onArticleClick = function() {
-  console.log("clicked");
   const dog = $(this).data("dog");
+
+  $("#dog-detail span.id").text(dog.id)
+  $("#dog-detail span.name").text(dog.name)
+  $("#dog-detail span.breed").text(dog.breed)
   console.log(dog);
 };
 

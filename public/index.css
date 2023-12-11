@@ -1,6 +1,3 @@
-* {
-  margin-top: .2em;
-}
 
 body {
   background-color: azure;
@@ -14,7 +11,7 @@ body {
 .dog-article {
   background-color: darkgreen;
   color: bisque;
-  margin: .2em;
+  margin-bottom: 6px;
   width: 18em;
 }
 
@@ -50,4 +47,18 @@ section#dog-form {
 .toggle {
   background-color: darkgreen;
   color: darkseagreen;
+}
+
+#dog-detail {
+  margin-top: 1em;
+  margin-left: 2em;
+  border: solid grey 2px;
+  height: 5em;
+  width: 18em;
+  padding: 10px;
+}
+
+.dog-sections {
+  display: flex;
+  flex-direction: row;
 }
