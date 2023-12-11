@@ -8,7 +8,7 @@ $(document).ready(() => {
 const onButtonClickTheOldWay = function() {
   console.log("Clicked");
 
-  // The really old way
+  // The really old way (settings object)
   $.ajax({
     url: "about.json",
     type: "GET",
