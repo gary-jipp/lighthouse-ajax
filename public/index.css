@@ -11,7 +11,7 @@ body {
   background-color: darkgreen;
   color: bisque;
   margin-bottom: 6px;
-  width: 18em;
+  width: 12em;
 }
 
 .dog-article:hover {
@@ -53,8 +53,9 @@ section#dog-form {
   margin-left: 2em;
   border: solid grey 2px;
   height: 5em;
-  width: 18em;
+  width: 12em;
   padding: 10px;
+  background-color: darkseagreen;
 }
 
 .dog-sections {
