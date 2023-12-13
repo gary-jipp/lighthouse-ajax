@@ -63,9 +63,6 @@ const loadDogs = function() {
 };
 
 const renderDogs = function(dogs) {
-  // Can't just render an array of Objects.
-  // $('#dogs-container').text(dogs);
-
   // Save this once and reuse
   const $container = $('#dogs-container').empty();
 
